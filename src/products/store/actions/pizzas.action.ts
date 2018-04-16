@@ -3,8 +3,8 @@ import { Action } from '@ngrx/store';
 import { Pizza } from '../../models/pizza.model';
 
 export const LOAD_PIZZAS = '[Feature] Load Pizzas';
-export const LOAD_PIZZAS_FAIL = '[Feature] Load Pizzas';
-export const LOAD_PIZZAS_SUCCESS = '[Feature] Load Pizzas';
+export const LOAD_PIZZAS_FAIL = '[Feature] Load Pizzas Fail';
+export const LOAD_PIZZAS_SUCCESS = '[Feature] Load Pizzas Success';
 export const MY_ACTION = '[Feature] My Action';
 
 export class LoadPizzas implements Action {

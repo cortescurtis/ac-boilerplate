@@ -28,6 +28,17 @@ export function reducer(state = initialState, action: fromPizzas.PizzasAction): 
                 loading
             }
         }
+        case fromPizzas.LOAD_PIZZAS_SUCCESS: {
+            const pizzas = action.payload;
+            const loaded = true;
+            const loading = false;
+
+            return {
+                pizzas,
+                loaded,
+                loading
+            }
+        }
     }
     return state;
 }
