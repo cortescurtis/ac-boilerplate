@@ -19,6 +19,9 @@ export function reducer(state = initialState, action: fromPizzas.PizzasAction): 
             const pizzas = [...state.pizzas];
             const loaded = false;
             const loading = false;
+
+            console.log('LoadPizzas', state);
+
             return {
                 pizzas,
                 loaded,
