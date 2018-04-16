@@ -42,3 +42,7 @@ export function reducer(state = initialState, action: fromPizzas.PizzasAction): 
     }
     return state;
 }
+
+export const getPizzas = (state: PizzaState) => state.pizzas;
+export const getPizzasLoaded = (state: PizzaState) => state.loaded;
+export const getPizzasLoading = (state: PizzaState) => state.loading;
