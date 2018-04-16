@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { reducers } from './store';
 
 // components
 import * as fromComponents from './components';
@@ -40,7 +41,7 @@ export const ROUTES: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forChild(ROUTES),
-    StoreModule.forFeature('products', {}),
+    StoreModule.forFeature('products', reducers),
     EffectsModule.forFeature([]),
   ],
   providers: [...fromGuards.guards, ...fromServices.services],
